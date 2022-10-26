@@ -1,8 +1,8 @@
 <template>
-  <footer id="footerType" class="footer__wrap section nexon gray">
+  <footer id="footerType" class="footer__wrap" :class="attr">
     <h2 class="blind">푸터 영역</h2>
-    <div class="footer__inner">
-      <div class="footer__menu container">
+    <div class="footer__inner" :class="layout">
+      <div class="footer__menu">
         <div>
           <h3>사이트</h3>
           <ul>
@@ -99,7 +99,14 @@
     </div>
   </footer>
 </template>
-
+<script>
+  export default{
+    props: {
+      attr : String,
+      layout: String,
+    },
+  };
+</script>
 <style>
 .footer__menu {
   display: flex;

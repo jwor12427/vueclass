@@ -1,8 +1,8 @@
 <template>
-  <section id="imageType" class="image__wrap nexon section content__item">
+  <section id="imageType" class="image__wrap" :class="attr">
     <h2>남극의 신사 펭귄🐧</h2>
     <p>가장 유명한 두 펭귄, 황제펭귄과 아델리펭귄을 소개합니다.</p>
-    <div class="image__inner container">
+    <div class="image__inner" :class="layout">
       <article class="image img1">
         <h3 class="image__title">아델리펭귄(Adélie Penguin)</h3>
         <p class="image__desc">
@@ -24,6 +24,14 @@
     </div>
   </section>
 </template>
+<script>
+  export default{
+    props: {
+      attr : String,
+      layout: String,
+    },
+  };
+</script>
 
 <style>
 /* imageType */

@@ -1,10 +1,10 @@
 <template>
   <section
     id="imgTextType"
-    class="image__wrap nexon section gray content__item"
+    class="image__wrap" :class="attr"
   >
     <h2 class="blind">올빼미와 부엉이</h2>
-    <div class="imgText__inner container">
+    <div class="imgText__inner" :class="layout">
       <div class="imgText__txt">
         <span>비슷하지만 서로 다른 올빼미와 부엉이</span>
         <h3>올빼미, 그리고 부엉이</h3>
@@ -27,6 +27,14 @@
     </div>
   </section>
 </template>
+<script>
+  export default{
+    props: {
+      attr : String,
+      layout: String,
+    },
+  };
+</script>
 <style>
 /* imgTextType */
 .imgText__inner {

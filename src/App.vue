@@ -2,12 +2,12 @@
   <div>
     <HeaderLayout fonts="nexon" />
     <SliderSection />
-    <ImageSection />
-    <ImgTextSection />
-    <CardSection />
-    <BannerSection />
-    <TextSection />
-    <FooterLayout />
+    <ImageSection attr="section naxon" layout="container"/>
+    <ImgTextSection attr="section naxon gray" layout="container"/>
+    <CardSection attr="section naxon" layout="container"/>
+    <BannerSection fonts="gmark"/>
+    <TextSection attr="section naxon" layout="container"/>
+    <FooterLayout attr="section naxon gray" layout="container"/>
   </div>
 </template>
 

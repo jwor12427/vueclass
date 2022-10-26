@@ -1,5 +1,5 @@
 <template>
-  <section id="bannerType" class="banner__wrap nexon content__item">
+  <section id="bannerType" class="banner__wrap" :class="fonts">
     <h2 class="blind">배너</h2>
     <div class="banner__inner">
       <h3 class="title">새의 언어</h3>
@@ -11,7 +11,13 @@
     </div>
   </section>
 </template>
-
+<script>
+export default {
+  props: {
+    fonts: String,
+  },
+};
+</script>
 <style>
 .banner__inner {
   background-image: url(../../assets/img/banner_bg01.jpg);

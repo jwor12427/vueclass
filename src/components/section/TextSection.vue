@@ -1,8 +1,8 @@
 <template>
-  <section id="textType" class="text__wrap nexon section content__item">
+  <section id="textType" class="text__wrap" :class="attr">
     <span>새롭게 업데이트 된 앵무새에 종류</span>
     <h2 class="mb70">멋쟁이, 따라쟁이 앵무새🦜</h2>
-    <div class="text__inner container">
+    <div class="text__inner" :class="layout">
       <div class="text t1">
         <h3 class="text__title">금강앵무</h3>
         <p class="text__desc">
@@ -56,6 +56,14 @@
     </div>
   </section>
 </template>
+<script>
+  export default{
+    props: {
+      attr : String,
+      layout: String,
+    },
+  };
+</script>
 <style>
 /* textType */
 .text__inner {

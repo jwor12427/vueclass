@@ -95,6 +95,10 @@ body {
     font-family: 'NexonLv1Gothic';
     font-weight: 400;
 }
+.gmark {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+}
 
 /* 배경 */
 .gray {

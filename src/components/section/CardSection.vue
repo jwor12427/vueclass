@@ -1,10 +1,10 @@
 <template>
-  <section id="cardType" class="card__wrap nexon section content__item">
+  <section id="cardType" class="card__wrap" :class="attr">
     <h2>당신에게 친숙한 새들의 이야기</h2>
     <p>
       많은 이들과 함께하는 새, 까마귀, 까치, 비둘기에 대한 이야기를 풀어보아요🕊️
     </p>
-    <div class="card__inner container">
+    <div class="card__inner" :class="layout">
       <article class="card">
         <figure class="card__header">
           <img src="../../assets/img/card_bg01_01.jpg" alt="해바라기" />
@@ -98,6 +98,14 @@
     </div>
   </section>
 </template>
+<script>
+  export default{
+    props: {
+      attr : String,
+      layout: String,
+    },
+  };
+</script>
 <style>
 /* cardType */
 .card__inner {
