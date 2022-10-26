@@ -1,5 +1,5 @@
 <template>
-  <header id="headerType">
+  <header id="headerType" :class="fonts">
     <div class="header__inner">
       <div class="header__logo">
         <a href="/"> Birds <em>Story</em> </a>
@@ -34,6 +34,14 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: {
+    fonts: String,
+  },
+};
+</script>
 
 <style>
 /* headerType */

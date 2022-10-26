@@ -14,4 +14,4 @@ npm install -g firebase-tools
 
 ## 배포하기
 
-https://vueclass-1427f.web.app/
+https://vueclass-1427f.web.app
